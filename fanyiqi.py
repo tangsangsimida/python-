@@ -7,6 +7,7 @@ param = {
     "smartresult": "dict",
     "smartresult": "rule"  # ?smartresult=dict&smartresult=rule
 }
+# 1
 input_ = input("请输入要翻译的词汇")
 data = {
     "i": "{}".format(input_),  # important

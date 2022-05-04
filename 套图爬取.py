@@ -39,7 +39,5 @@ def getimg(url):
 if __name__ == '__main__':
     url = "http://www.dbbqb.com/api/group"
     getimg(url)
-# text text
-# text text
-# text text # text text
+    os.system("pause")
 
