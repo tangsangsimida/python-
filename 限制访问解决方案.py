@@ -15,7 +15,7 @@ def askimg():
         "Web-Agent": "web",
         # "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.50",
         # "User-Agent": "Firefox 4.0.1 – WindowsUser-Agent:Mozilla/5.0 (Windows NT 6.1; rv:2.0.1) Gecko/20100101 Firefox/4.0.1",
-        "User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Safari/537.36 Edg/101.0.1210.32",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Safari/537.36 Edg/101.0.1210.32",
         "Accept": "application/json",
         "Accept-Encoding": "gzip, deflate",
         "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6"
@@ -25,7 +25,7 @@ def askimg():
     url_img = "http://image.dbbqb.com/"  # 202204241523/04ba69bd460aaf922256711e5912b2ff/DGyoE
     '''图片的数据库加上请求到的100条path就直接能拿到100张jpg'''
     param = {"size": "100"}
-    resp = requests.get(url, headers=head, params=param)#.json()  # 拿到的是一个列表，列表里面的有100条字典转载数据
+    resp = requests.get(url, headers=head, params=param)  # .json()  # 拿到的是一个列表，列表里面的有100条字典转载数据
     print(resp)
     '''字典的名字从0-99'''
     '''Array[100]包含了Object{}*100'''
